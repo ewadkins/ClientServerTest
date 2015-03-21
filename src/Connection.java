@@ -84,7 +84,7 @@ public class Connection {
 		}).start();
 
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -95,7 +95,7 @@ public class Connection {
 			public void run() {
 				// TODO Auto-generated method stub
 
-				new Connection("18.111.121.190", true); // CLIENT
+				//new Connection("18.111.121.190", true); // CLIENT
 			}
 		}).start();
 		}
@@ -226,7 +226,8 @@ public class Connection {
 			listModel.addElement("");
 		//list.setSelectedIndex(listData.size());
 		list.setEnabled(false);
-		listScroller.getVerticalScrollBar().setValue(listScroller.getVerticalScrollBar().getMaximum());
+		//listScroller.getVerticalScrollBar().setValue(listScroller.getVerticalScrollBar().getMaximum());
+		listScroller.getVerticalScrollBar().setValue(list.getHeight());
 	}
 
 	public void kill() {
