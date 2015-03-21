@@ -1,3 +1,3 @@
 cd $(dirname $0)
-java Client
+java Connection host
 exit
